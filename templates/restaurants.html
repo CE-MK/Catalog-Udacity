@@ -1,0 +1,40 @@
+<html>
+
+<head>
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='main.css') }}">
+</head>
+
+
+<body>
+{% include "nav.html" %}
+{% include "flash.html" %}
+
+
+<div class="form-container">
+<h1>Restaurants</h1>
+
+
+<ul class="change-menu">
+	<li>
+		<a href="{{url_for('newRestaurant')}}" >  Create a New Restaurant  </a>
+		{% for restaurant in restaurants %}
+	</li>
+	<li>
+		<a href = "{{url_for('restaurantMenu', restaurant_id = restaurant.id)}}"> {{restaurant.name}}</a>
+	</li>
+	<li>
+		<a href = "{{url_for('editRestaurant',restaurant_id = restaurant.id)}}">Edit Restaurant</a>
+	</li>
+	<li>
+		<a href = "{{url_for('deleteRestaurant',restaurant_id = restaurant.id)}}">Delete Restaurant</a> <br/>
+	</li>
+
+</ul>
+
+
+{% endfor %}
+
+</div>
+</body>
+
+</html>

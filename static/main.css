@@ -1,0 +1,113 @@
+@media (min-width: 320px) {
+	body{
+		font-family: Helvetica;
+		background-color: #f9f9f9;
+		background-image: url('restaurant-background.jpg');
+		background-position: center;
+		background-size: cover;
+	}
+	
+	ul{
+		padding:0px;
+	}
+	
+	li {
+		list-style-type:none;
+		padding: 15px 20px;
+	}
+	
+	h1{
+		font-family: Helvetica; 
+		color: #7B895B;
+	}
+	
+	h1,
+	h2,
+	h3,
+	h4{
+		color: #000;
+		font-weight: bold;
+	}
+	
+	input[type="submit"]{
+		color:#fff;
+		font-size: 14px;
+		background-color: #1d2129;
+		padding: 10px 15px;
+		transition: all 0.3s ease;
+		border: medium none;
+		box-shadow:none;
+		
+	}
+	input[type="text"]{
+		height:39px;
+		border: medium none;
+		box-shadow:none;
+	}
+	h2{
+		font-family: 'Georgia', serif; margin: 0;
+	}
+	
+	h2{
+		font-size: 1.2em;
+	}
+	
+	
+	p{
+		color: #1d2129;
+		margin-bottom: 30px;
+	}
+	
+	a{
+		text-decoration: none; 
+		color:#fff;
+		font-size: 14px;
+		background-color: #1d2129;
+		padding: 10px 15px;
+		transition: all 0.3s ease;
+	}
+	
+	a:hover,
+	input[type="submit"]:hover{
+		padding: 12px 18px;
+	}
+	
+	.form-container{
+		margin-top: 100px;
+		padding: 15px 10px;
+		width: auto;
+		max-width:90%;
+		background-color:rgba(255,255,255,0.8);
+	}
+	
+	.header{
+		left:50%;
+		text-align: center;
+	}
+	
+	.name{
+		width:50%;
+		display: inline-block;
+		float: left;
+	}
+	
+	
+	
+	.price{
+		text-align: right;
+		width:50%;
+		float: right;
+	}
+	
+	
+	
+	.flash{
+		background: #999999;
+	}
+}
+@media (min-width: 960px) {
+	
+	.form-container{
+		max-width:50%;
+	}
+}

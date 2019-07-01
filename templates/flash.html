@@ -1,0 +1,13 @@
+<!--message flashing-->
+{% with messages = get_flashed_messages() %}
+{% if messages %}
+
+  <div class="flash">
+    {% for message in messages %}
+    <p><strong>{{message}}</strong></p>
+    {% endfor %}
+  </div>
+
+{% endif %}
+{% endwith %}
+<!--end message flashing-->
